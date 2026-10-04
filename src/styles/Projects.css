@@ -1,0 +1,24 @@
+.Projects-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+h3 {
+  margin: 2%;
+}
+
+@media (max-width: 1200px) {
+  .Projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .Projects-container {
+    grid-template-columns: 1fr;
+  }
+}

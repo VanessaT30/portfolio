@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Project Title1",
+    "description": "Project description 1",
+    "project-tags": ["HTML", "CSS", "JavaScript"],
+    "src": "/HeaderImage2.png",
+    "alt": "Tic Tac Toe",
+    "link": "https://vanessat30.github.io/TicTacToe/"
+  },
+  {
+    "title": "Project Title2",
+    "description": "Project description 2",
+    "project-tags": ["HTML", "Azure", "JavaScript"],
+    "src": "/HeaderImage2.png",
+    "alt": "Project 2",
+    "link": "https://vanessat30.github.io/Project2/"
+  },
+  {
+    "title": "Project Title3",
+    "description": "Project description 3",
+    "project-tags": ["HTML", "CSS", "Vim"],
+    "src": "/HeaderImage2.png",
+    "alt": "project 3",
+    "link": "View Project"
+  },
+  {
+    "title": "Project Title4",
+    "description": "Project description 1",
+    "project-tags": ["HTML", "CSS", "JavaScript"],
+    "src": "/images/HeaderImage2.png",
+    "alt": "project 4",
+    "link": "View Project"
+  },
+  {
+    "title": "Project Title5",
+    "description": "Project description 2",
+    "project-tags": ["HTML", "Azure", "JavaScript"],
+    "src": "HeaderImage",
+    "alt": "project 5",
+    "link": "View Project"
+  },
+  {
+    "title": "Project Title6",
+    "description": "Project description 3",
+    "project-tags": ["HTML", "CSS", "Vim"],
+    "src": "HeaderImage",
+    "alt": "project 6",
+    "link": "View Project"
+  }
+]

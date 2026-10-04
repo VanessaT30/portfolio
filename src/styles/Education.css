@@ -1,0 +1,30 @@
+.MainEducation {
+  width: 95%;
+  box-sizing: border-box;
+  margin: 1%;
+}
+
+.experience-article {
+  margin: 2.5% 1% 0 5%;
+}
+
+.experience-item-header {
+  color: var(--header-accent-strong);
+}
+
+.cap {
+  display: inline-flex;
+  gap: 0.8rem;
+  text-align: center;
+  margin-left: -2.6rem;
+}
+
+.subjects {
+  list-style-type: circle;
+  margin-left: 2rem;
+}
+
+.points {
+  list-style-type: disc;
+  margin-left: 1rem;
+}

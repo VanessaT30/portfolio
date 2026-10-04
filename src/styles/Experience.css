@@ -1,0 +1,75 @@
+.mainExperience {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--header-accent);
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -2.45rem;
+  top: 1.8rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: var(--header-accent);
+}
+
+.experience-item ul li {
+  align-items: center;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item-header h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.experience-item p {
+  /* text-align: right; */
+}
+
+.experience-item h3 {
+  margin: 0 0 1rem;
+  color: var(--header-accent);
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}

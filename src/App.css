@@ -1,47 +1,207 @@
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  /* overflow: hidden; was: auto — stop the whole page scrolling */
+  font-family: var(--font-body);
+}
+
+.shell {
+  /* background-color: rgb(182, 209, 250); */
+  width: min(1800px, calc(100% - 2rem));
+  /* min-height: 100vh; */
+  margin: 0 auto;
+}
+
 .container {
+  /* height: calc(
+    100vh - 2rem
+  ); was: 100vh — now leaves room for the 1rem top + 1rem bottom margin */
   display: grid;
   grid-template-areas:
     "header header header"
     "nav main main"
-    "nav main main";
+    "nav main main"
+    "footer footer footer";
   grid-template-columns: 1fr 2fr 2fr;
-  width: min(1200px, calc(100% - 2rem));
-  margin: 0 auto;
-  gap: 1rem;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  width: min(1600px, calc(100% - 2rem));
+  margin: 1rem auto;
+  gap: 0.5rem;
+  box-sizing: border-box;
 }
 
 .header,
 .nav,
-.main {
+.main,
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  align-items: center;
+  /* border-radius: 0.3rem; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+  /* border: 1px solid transparent; */
+  /* border-color: var(--title-color); */
+  border: 1px solid var(--line);
 }
 
-.header {
-  grid-area: header;
-  background-color: rgb(244, 243, 245);
+.header h1,
+.main h1 {
+  color: var(--title-color);
+  font-weight: var(--title-weight);
+  font-size: var(--title-size);
+  line-height: 1.1;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.2px;
+  font-family: var(--font-display);
 }
+
+.main h1 {
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  margin-bottom: 1.1rem;
+}
+
+/* hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 12px 0;
+} */
 
 .nav {
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
   grid-area: nav;
-  background-color: rgb(244, 243, 245);
+  /* padding: 5px; */
+  margin: 0;
+  background-color: rgb(244, 243, 245, 0.9);
+  border-radius: 0.3rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  text-align: left;
+  background: none;
+  /* width: 100%; */
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.nav-link.active,
+.nav a[aria-current="page"] {
+  font-weight: 600;
+  color: var(--select-text);
+  background-color: var(--header-accent);
+  /* border-color: var(--background); */
+}
+
+.nav-link:hover {
+  /* border-color: rgb(182, 203, 250); */
+  border-color: var(--header-accent);
+  transform: translateX(6px);
 }
 
 .main {
   grid-area: main;
   flex-direction: column;
-  background-color: rgb(244, 243, 245);
+  justify-content: flex-start; /* ADD — override the inherited center */
+  background-color: rgb(244, 243, 245, 0.9);
   text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 2rem; /* clears the sticky footer's height */
 }
 
-@media (max-width: 769px) {
+.footer {
+  grid-area: footer;
+  /* position: sticky;   ← remove
+     bottom: 0;          ← remove
+     z-index: 10;        ← remove */
+  background-color: rgb(244, 243, 245);
+  text-align: center;
+  margin-top: 0.75rem;
+  box-sizing: border-box;
+  box-shadow: 0 -8px 16px -12px rgba(0, 0, 0, 0.2); /* visual separation while it's pinned */
+  letter-spacing: 0.03em;
+  border: none;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.75rem;
+  background-color: var(--ink);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  border: none;
+}
+
+@media (max-width: 450px) {
   .container {
     grid-template-areas:
       "header"
       "nav"
-      "main";
-    grid-template-columns: 1fr;
+      "main"
+      "footer";
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    margin: 0;
   }
+
+  .header,
+  .nav,
+  .main,
+  .footer {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .nav {
+    position: static;
+  }
+}
+
+footer {
+  margin-top: auto;
+  min-height: 50px;
+  background: PapayaWhip;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
