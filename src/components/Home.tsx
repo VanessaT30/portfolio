@@ -38,7 +38,7 @@ const Home = () => {
             </div>
             <div>Hang around or check out some of my projects </div>
             <button>
-              <a href="/">Download CV</a>
+              <a href={`${import.meta.env.BASE_URL}CV.pdf`} download>Download CV</a>
             </button>
           </div>
 
