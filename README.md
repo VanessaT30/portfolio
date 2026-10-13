@@ -2,6 +2,10 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+The GitHub Pages site is published at `https://vanessat30.github.io/portfolio/`.
+The build copies `index.html` to `404.html` so React Router deep links continue
+to work when opened directly or refreshed.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
