@@ -1,4 +1,3 @@
-import React from "react";
 import "../App.css";
 import { NavLink } from "react-router-dom";
 import { IoPersonOutline, IoBriefcaseOutline } from "react-icons/io5";

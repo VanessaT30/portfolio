@@ -1,3 +1,5 @@
+import { RiCodeSSlashFill } from "react-icons/ri";
+
 export default function ListOfSkills() {
   return (
     <>

@@ -1,4 +1,3 @@
-import react from "react";
 import "../styles/Experience.css";
 
 const Experience = () => {

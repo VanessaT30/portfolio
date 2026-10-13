@@ -1,4 +1,3 @@
-import react, { useEffect, useState } from "react";
 import "../App.css";
 import "../styles/AboutMe.css";
 import { RiCodeSSlashFill } from "react-icons/ri";

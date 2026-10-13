@@ -1,4 +1,3 @@
-import react from "react";
 import "../App.css";
 import headerImage from "../assets/HeaderImage2.png";
 import { FaRegEnvelope } from "react-icons/fa";
