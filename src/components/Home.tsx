@@ -38,7 +38,9 @@ const Home = () => {
             </div>
             <div>Hang around or check out some of my projects </div>
             <button>
-              <a href={`${import.meta.env.BASE_URL}CV.pdf`} download>Download CV</a>
+              <a href={`${import.meta.env.BASE_URL}CV.VanessaT.pdf`} download>
+                Download CV
+              </a>
             </button>
           </div>
 
@@ -101,7 +103,7 @@ const Home = () => {
           {projects?.slice(0, 3).map((project, i) => (
             <ProjectCard
               key={project.title || i}
-              src={project.src}
+              src={`${import.meta.env.BASE_URL}${project.src?.replace(/^\/+/, "")}`}
               alt={project.alt || "Project image"}
               title={project.title}
               description={project.description}

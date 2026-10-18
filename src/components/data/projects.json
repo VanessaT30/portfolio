@@ -3,17 +3,17 @@
     "title": "Project Title1",
     "description": "Project description 1",
     "project-tags": ["HTML", "CSS", "JavaScript"],
-    "src": "/HeaderImage2.png",
+    "src": "/TicTacToe.png",
     "alt": "Tic Tac Toe",
     "link": "https://vanessat30.github.io/TicTacToe/"
   },
   {
     "title": "Project Title2",
     "description": "Project description 2",
-    "project-tags": ["HTML", "Azure", "JavaScript"],
-    "src": "/HeaderImage2.png",
+    "project-tags": ["React", "Jsx", "Vite"],
+    "src": "/MovieDux.png",
     "alt": "Project 2",
-    "link": "https://vanessat30.github.io/Project2/"
+    "link": "https://vanessat30.github.io/MovieDux/"
   },
   {
     "title": "Project Title3",
