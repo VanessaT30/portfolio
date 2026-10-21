@@ -21,13 +21,9 @@ export default function ProjectCard({
   return (
     <>
       <div className="project-card">
-        <img
-          src={src}
-          alt={alt}
-          style={{ maxWidth: "100%", height: "10rem" }}
-        />
+        <img src={src} alt={alt} />
         <h1>{title}</h1>
-        <p>{description}.</p>
+        <p className="project-description">{description}.</p>
 
         <div className="project-tags">
           {projectTags?.map((p, index) => (

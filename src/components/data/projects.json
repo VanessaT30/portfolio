@@ -1,27 +1,27 @@
 [
   {
-    "title": "Project Title1",
-    "description": "Project description 1",
+    "title": "Movie Watchlist",
+    "description": "A  movie watchlist application that allows users to search for movies, add them to their watchlist, and mark them as watched. Built with React, JSX and Vite",
+    "project-tags": ["React", "Jsx", "Vite"],
+    "src": "/MovieDux.png",
+    "alt": "Movie Watchlist Project",
+    "link": "https://vanessat30.github.io/MovieDux/"
+  },
+  {
+    "title": "Skincare Website",
+    "description": "A modern skincare website built with React and Node.js, featuring a responsive design and seamless user experience",
+    "project-tags": ["Node.js", "Ionic", "MySQL"],
+    "src": "/SkincareWebsite.png",
+    "alt": "Skincare Website Project",
+    "link": "View Project"
+  },
+  {
+    "title": "Tic Tac Toe Website",
+    "description": "A simple tic tac toe game for two players, built with HTML, CSS, and JavaScript",
     "project-tags": ["HTML", "CSS", "JavaScript"],
     "src": "/TicTacToe.png",
     "alt": "Tic Tac Toe",
     "link": "https://vanessat30.github.io/TicTacToe/"
-  },
-  {
-    "title": "Project Title2",
-    "description": "Project description 2",
-    "project-tags": ["React", "Jsx", "Vite"],
-    "src": "/MovieDux.png",
-    "alt": "Project 2",
-    "link": "https://vanessat30.github.io/MovieDux/"
-  },
-  {
-    "title": "Project Title3",
-    "description": "Project description 3",
-    "project-tags": ["HTML", "CSS", "Vim"],
-    "src": "/HeaderImage2.png",
-    "alt": "project 3",
-    "link": "View Project"
   },
   {
     "title": "Project Title4",
