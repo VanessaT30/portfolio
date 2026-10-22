@@ -2,7 +2,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import { IoPersonOutline, IoBriefcaseOutline } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
-import { GoProjectRoadmap } from "react-icons/go";
+// import { GoProjectRoadmap } from "react-icons/go";
 import { IoIosStarOutline } from "react-icons/io";
 import { PiHouseLine } from "react-icons/pi";
 
