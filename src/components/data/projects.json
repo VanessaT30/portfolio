@@ -9,8 +9,14 @@
   },
   {
     "title": "Skincare Website",
-    "description": "A modern skincare website built with React and Node.js, featuring a responsive design and seamless user experience",
-    "project-tags": ["Node.js", "Ionic", "MySQL"],
+    "description": "A modern skincare website that includes a product catalog, shopping cart, and checkout process, allowing users to easily browse and purchase skincare products online. This includes a backend using MySQL",
+    "project-tags": [
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Express-Handlebars",
+      "React"
+    ],
     "src": "/SkincareWebsite.png",
     "alt": "Skincare Website Project",
     "link": "View Project"

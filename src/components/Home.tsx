@@ -36,7 +36,7 @@ const Home = () => {
               back-end development, and I am always looking to learn new
               technologies and improve my skills.
             </div>
-            <div>Hang around or check out some of my projects </div>
+            <div>Hang around or check out some of my projects!</div>
             <button>
               <a href={`${import.meta.env.BASE_URL}CV.VanessaT.pdf`} download>
                 Download CV
